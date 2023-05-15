@@ -1,10 +1,11 @@
-h1 {
+h1,
+h2,
+h3 {
     text-align: center;
 }
-h3{
-    text-align: center;
-}
-body{
+
+
+body {
     color: rgb(255, 255, 255);
     background-image: linear-gradient(90deg, #aa2323, #aa6b23, #aa2323, #aa2335, #aa2323);
     background-size: 500%;
@@ -12,30 +13,46 @@ body{
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 0.5%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes bg-animation {
-    0% {background-position: left}
-    50% {background-position: right}
-    100% {background-position: left}
+    0% {
+        background-position: left
+    }
+
+    50% {
+        background-position: right
+    }
+
+    100% {
+        background-position: left
+    }
 }
 
-.Middle{
+.Middle {
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 1%;
+    padding-top: 1px;
     padding-bottom: 1%;
-    border-radius:3mm;
+    border-radius: 3mm;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.linkbar{
-    text-align: center;
-    color: black
 
+.linkbar {
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .linkbar a:visited {
-    color: #ff2929;
+    color: #ebee29;
+}
+
+.linkbar a:link {
+    color: #ebee29;
+}
+
+hr {
+    color: rgb(0, 0, 0)
 }
