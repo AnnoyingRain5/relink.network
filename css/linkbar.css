@@ -1,0 +1,32 @@
+.linkbar {
+  color: rgb(255, 255, 255);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 3mm;
+  margin-top: 2mm;
+  width: fit-content;
+  margin: 0px auto;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.linkbar a {
+  text-decoration: none;
+}
+.linkbar a:visited {
+  color: #ebee29;
+}
+
+.linkbar a:link {
+  color: #ebee29;
+}
+
+.linkbar a:hover {
+  color: #fbff00;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  margin: 0px;
+}
