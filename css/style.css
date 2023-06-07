@@ -1,96 +1,77 @@
 h1,
 h2,
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
-
 body {
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(90deg, #aa2323, #aa6b23, #aa2323, #aa2335, #aa2323);
-    background-size: 500%;
-    animation: bg-animation 30s infinite;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 0.5%;
-    display: grid;
-    grid-auto-flow: row;
-    row-gap: 1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    90deg,
+    #aa2323,
+    #aa6b23,
+    #aa2323,
+    #aa2335,
+    #aa2323
+  );
+  background-size: 500%;
+  animation: bg-animation 30s infinite;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes bg-animation {
-    0% {
-        background-position: left
-    }
+  0% {
+    background-position: left;
+  }
 
-    50% {
-        background-position: right
-    }
+  50% {
+    background-position: right;
+  }
 
-    100% {
-        background-position: left
-    }
+  100% {
+    background-position: left;
+  }
 }
 
 .Middle {
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    border-radius: 3mm;
-    background-color: rgba(0, 0, 0, 0.1);
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border-radius: 3mm;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .autosizemiddle {
-    text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 1%;
-    padding-right: 1%;
-    border-radius: 3mm;
-    margin-top: 2mm;
-    width: fit-content;
-    margin: 0.5rem auto;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.linkbar {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 1%;
-    padding-right: 1%;
-    border-radius: 3mm;
-    margin-top: 2mm;
-    width: fit-content;
-    margin: 0px auto;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.linkbar a:visited {
-    color: #ebee29;
-}
-
-.linkbar a:link {
-    color: #ebee29;
-}
-
-.linkbar a:hover {
-    color: #fbff00;
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 3mm;
+  margin-top: 2mm;
+  width: fit-content;
+  margin: 0.5rem auto;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 a {
-    text-decoration: none;
-    color: rgb(122, 195, 255);
+  text-decoration: none;
+  color: rgb(122, 195, 255);
 }
 
 a:hover {
-    text-decoration: none;
-    color: rgb(157, 212, 255);
+  text-decoration: none;
+  color: rgb(157, 212, 255);
 }
 
 hr {
-    color: rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
