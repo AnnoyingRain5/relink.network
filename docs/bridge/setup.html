@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Lightquark &lt;-&gt; Relink Bridge Setup</title>
+  </head>
+
+  <body>
+    <div class="Middle">
+      <h1>Lightquark &lt;--&gt; Relink Bridge Setup</h1>
+    </div>
+    <iframe
+      style="margin-left: auto; margin-right: auto"
+      src="/linkbar.html"
+      allowtransparency="true"
+      frameborder="0"
+      height="56"
+      width="100%"
+    ></iframe>
+    <div class="Middle">
+      <h2>Downloading</h2>
+      <p>
+        Head over to the <a href="/download"> download</a> page and download the
+        latest version of the bridge software for your operating system. You can
+        also download the python script directly from github if you prefer, but
+        make sure to recursively clone it and pip install the requirements if
+        you go that route!
+      </p>
+      <p>
+        There is also a dockerfile provided, which will automatically pull from
+        git master each time you restart it.
+      </p>
+      <div class="autosizemiddle">
+        <p>Important note:</p>
+        <p>
+          If you use Linux and are using a binary from the Downloads page, note
+          that you will have to mark it as executable by using chmod +x filename
+        </p>
+      </div>
+    </div>
+    <div class="Middle">
+      <h2>Configuration</h2>
+      <p>
+        Now that you have the software downloaded, it's time to do some
+        configuration!
+      </p>
+      <p>
+        Below is the current git master version of the .env.example file, you
+        can use this to either make your own .env file, or to set the
+        environment variables yourself. Note that this default configuration
+        will not work as-is, due to not having a valid token.
+      </p>
+      <div
+        id="show-json-from-git"
+        class="autosizemiddle"
+        style="text-align: left"
+      ></div>
+
+      <script>
+        var url =
+          "https://cdn.jsdelivr.net/gh/AnnoyingRain5/Relink-Lightquark-Bridge/.env.example";
+        fetch(url)
+          .then((res) => res.text())
+          .then((out) => {
+            document.getElementById("show-json-from-git").innerText = out;
+          })
+          .catch((err) => {
+            throw err;
+          });
+      </script>
+      <h3>Well, how do I get a token then?</h3>
+      <p>
+        You can get a Lightquark token using the Lightquark API, which is
+        documented on the Lightquark website.
+      </p>
+      <h3>Wait, how do I set environment variables anyway?</h3>
+      <p>
+        Please check our dedicated page on
+        <a href="/docs/env">setting environment variables</a>
+      </p>
+    </div>
+    <div class="Middle">
+      <h3>Starting the bridge</h3>
+      <p>
+        Now that you have configured everything, you can now start the bridge!
+        This is as easy as starting the script
+        <strong>through the command line!</strong>
+      </p>
+      <p>... and that's it!</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Relink Client Setup</title>
+  </head>
+
+  <body>
+    <div class="Middle">
+      <h1>Relink Client Setup</h1>
+    </div>
+    <iframe
+      style="margin-left: auto; margin-right: auto"
+      src="/linkbar.html"
+      allowtransparency="true"
+      frameborder="0"
+      height="56"
+      width="100%"
+    ></iframe>
+    <div class="Middle">
+      <h2>Downloading</h2>
+      <p>
+        Head over to the <a href="/download">download</a> page and download the
+        latest version of the client software for your operating system. You can
+        also download the python script directly from github if you prefer, but
+        make sure to recursively clone it and pip install the requirements if
+        you go that route!
+      </p>
+      <div class="autosizemiddle">
+        <p>Important note:</p>
+        <p>
+          If you use Linux and are using a binary from the Downloads page, note
+          that you will have to mark it as executable by using chmod +x filename
+        </p>
+      </div>
+    </div>
+
+    <div class="Middle">
+      <h2>Starting the client</h2>
+      <div class="autosizemiddle">
+        <p>Important note:</p>
+        <p>
+          If you are using Windows, you will need to ensure you are using a
+          compatible console. The standard Command Prompt and Powershell
+          terminals provided by Windows are not suitable due to a lack of
+          support for many standardised escape codes.
+          <a
+            href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701"
+            >Windows Terminal</a
+          >
+          (Microsoft Store link) does support these codes, and is the
+          recommended terminal app for end users.
+        </p>
+        <p>
+          If you are using an executable from the download page, you will also
+          need to set it as your default terminal app.
+        </p>
+      </div>
+      <h3>Windows:</h3>
+      <p>
+        If it's an executable from the download page, just double click it to
+        open! If it's a script file, you'll need to open it from your terminal
+        by running python3 client.py
+      </p>
+      <h3>MacOS and Linux</h3>
+      <p>
+        Open your chosen terminal app and run the app using it. This is often as
+        easy as dragging the executable into the windows and hitting enter.
+      </p>
+    </div>
+    <div class="Middle">
+      <h2>Connecting to a server</h2>
+      <p>
+        Each time you start the client you will be asked to input a server
+        address.
+      </p>
+      <p>
+        If you do not know what server to join, feel free to join the official
+        server at relink.network. Know that due to federation, which server you
+        join does not really matter, as, just like email, you can join any
+        channel and DM any user from any server.
+      </p>
+      <p>... and that's it!</p>
+    </div>
+  </body>
+</html>
