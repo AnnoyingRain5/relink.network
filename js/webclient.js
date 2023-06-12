@@ -46,6 +46,7 @@ function runCommand() {
       args: command.split(" ").slice(1),
     })
   );
+  document.getElementById("command").value = "";
 }
 
 function sendMessage() {
