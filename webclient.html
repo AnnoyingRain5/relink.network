@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Relink Web Client</title>
+    <style></style>
+    <script src="js/webclient.js"></script>
+  </head>
+
+  <body>
+    <div class="Middle">
+      <h1>Relink Web Client</h1>
+    </div>
+    <iframe
+      style="margin-left: auto; margin-right: auto"
+      src="/linkbar.html"
+      allowtransparency="true"
+      frameborder="0"
+      height="56"
+      width="100%"
+    ></iframe>
+    <div id="login">
+      <div class="Middle">
+        <h2>Log in:</h2>
+        <div class="autosizemiddle">
+          <form action="javascript:login()">
+            <input type="text" id="username" placeholder="Username" />
+            <br />
+            <input type="password" id="password" placeholder="Password" />
+            <br />
+            <input type="submit" value="Log in" />
+          </form>
+        </div>
+      </div>
+      <br />
+      <div class="Middle">
+        <h2>Sign Up</h2>
+        <div class="autosizemiddle">
+          <form action="javascript:signup()">
+            <input type="text" id="su-username" placeholder="Username" />
+            <br />
+            <input type="password" id="su-password" placeholder="Password" />
+            <br />
+            <input type="submit" value="Sign Up" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="title" class="autosizemiddle topsticky" style="visibility: hidden">
+      <h2></h2>
+    </div>
+    <div id="chat" style="visibility: hidden"></div>
+
+    <div
+      id="UI"
+      class="Middle bottomsticky"
+      style="visibility: hidden; display: flex"
+    >
+      <div class="autosizemiddle" style="margin-right: 1%; width: 70%">
+        <form action="javascript:sendMessage()">
+          <input
+            type="text"
+            id="message"
+            placeholder="Message"
+            style="width: 95%"
+          />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+      <div class="autosizemiddle" style="margin-right: 1%">
+        <form action="javascript:changeChannel()">
+          <input type="text" id="channel" placeholder="Channel" />
+          <input type="submit" value="Change Channel" />
+        </form>
+      </div>
+      <div class="autosizemiddle">
+        <form action="javascript:runCommand()">
+          <input type="text" id="command" placeholder="Command" />
+          <input type="submit" value="Run Command" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

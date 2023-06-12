@@ -51,8 +51,8 @@ body {
 
 .autosizemiddle {
   text-align: center;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   padding-left: 1%;
   padding-right: 1%;
   border-radius: 3mm;
@@ -60,6 +60,15 @@ body {
   width: fit-content;
   margin: 0.5rem auto;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.topsticky {
+  position: sticky;
+  top: 0;
+}
+.bottomsticky {
+  position: sticky;
+  bottom: 0;
 }
 
 a {
@@ -74,4 +83,38 @@ a:hover {
 
 hr {
   color: rgb(0, 0, 0);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 15em;
+  color: white;
+  /* !important to override the browser autofill */
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  border-radius: 5px;
+  margin: 2%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin: 2%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Remove the browser autofill background that was driving me insane */
+@keyframes autofill {
+  0%,
+  100% {
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-delay: 1s;
+  /* Safari support - any positive time runs instantly */
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
 }
